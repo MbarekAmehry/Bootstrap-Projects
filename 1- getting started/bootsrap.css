@@ -1,0 +1,52 @@
+/* // Small devices (landscape phones, 576px and up) */
+h3 {
+  background-color: #ffffff;
+  border: 1px solid black;
+  margin: 1em 0;
+  padding: 10px 0;
+}
+.heading-0 {
+  color: darkolivegreen;
+}
+.heading-1 {
+  color: lightgreen;
+}
+.heading-2 {
+  color: lightblue;
+}
+.heading-3 {
+  color: goldenrod;
+}
+.heading-4 {
+  color: lightgrey;
+}
+
+/* ********* Media queries ********* */
+@media (max-width: 576px) {
+  body {
+    background: darkolivegreen;
+  }
+}
+@media (min-width: 576px) {
+  body {
+    background: lightgreen;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: lightblue;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background: goldenrod;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background: lightgrey;
+  }
+}
