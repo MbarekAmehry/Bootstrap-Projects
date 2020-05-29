@@ -3,6 +3,10 @@
   height: 4px;
 }
 
+.card-img {
+  border-radius: 0 !important;
+}
+
 .cardOrange,
 .btnOrange {
   background-color: #ce5a3c !important;
