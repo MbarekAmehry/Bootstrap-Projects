@@ -12,7 +12,54 @@
     <title>Starting!</title>
   </head>
   <body>
-    <header class="bg-dark">
+    <!-- Header -->
+    <header id="header" class="bg-dark">
+      <!--    Navbar -->
+      <nav class="navbar py-2 navbar-dark navbar-expand-md">
+        <a href="#" class="navbar-brand">
+          <img src="./img/icon-2.PNG" width="140" height="60" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarLinks"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- LINKS -->
+        <div
+          class="collapse navbar-collapse justify-content-center pt-3"
+          id="navbarLinks"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item pl-2">
+              <a href="#header" class="nav-link active text-uppercase h5"
+                >header</a
+              >
+            </li>
+            <li class="nav-item pl-2">
+              <a href="#skills" class="nav-link active text-uppercase h5"
+                >skills</a
+              >
+            </li>
+            <li class="nav-item pl-2">
+              <a href="#about" class="nav-link active text-uppercase h5"
+                >about</a
+              >
+            </li>
+            <li class="nav-item pl-2">
+              <a href="#projects" class="nav-link active text-uppercase h5"
+                >projects</a
+              >
+            </li>
+            <li class="nav-item pl-2">
+              <a href="#contacts" class="nav-link active text-uppercase h5">contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ** END Navbar -->
       <div class="container-fluid">
         <div class="row min-vh-100 align-items-center">
           <div class="col">
@@ -20,28 +67,23 @@
               <strong class="text-danger"> my first bootstrap </strong>
               <small class="text-light">website</small>
             </h1>
-            <p class="text-secondary lead py-3 w-75">
+            <p class="text-light lead py-3 w-75">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
               doloremque labore beatae voluptatibus illum eius voluptatem fugiat
               quaerat distinctio corporis?
             </p>
-            <a
-              href=""
-              class="btn btn-lg text-primary border border-primary rounder"
+            <a href="" class="btn btn-lg btn-outline-primary mx-3"
               >Press Here</a
             >
-            <a
-              href=""
-              class="btn btn-lg text-danger border border-danger rounder mx-3"
-              >Press Here</a
-            >
+
+            <a href="" class="btn btn-lg btn-outline-danger">Press Here</a>
           </div>
         </div>
       </div>
     </header>
 
     <!-- =========== SKILLS ===========-->
-    <div class="skills container-fluid text-center py-4">
+    <div id="skills" class="skills container-fluid text-center py-4">
       <h1 class="text-uppercase font-weight-bold display-4">
         Skills
         <div class="bg-danger mx-auto title-underline"></div>
@@ -113,7 +155,7 @@
     <!-- =========== End of SKILLS ===========-->
 
     <!-- =========== About ===========-->
-    <div class="container-fluid">
+    <div id="about" class="container-fluid">
       <div class="row">
         <div class="col-md-6 min-height px-0">
           <img
@@ -167,7 +209,10 @@
     <!-- =========== END of About ===========-->
 
     <!-- =========== Projects ===========-->
-    <div class="container-fluid bg-secondary text-dark py-5 text-center">
+    <div
+      id="projects"
+      class="container-fluid bg-secondary text-dark py-5 text-center"
+    >
       <h1 class="text-uppercase display-4 m-0 font-weight-bold">Projects</h1>
       <div class="title-underline bg-danger mx-auto"></div>
 
@@ -220,7 +265,7 @@
     <!-- =========== END OF Projects ===========-->
 
     <!-- =========== TEAM ===========-->
-    <div class="container">
+    <div id="team" class="container">
       <h1 class="text-uppercase display-4 my-0 text-center font-weight-bold">
         Team
       </h1>
@@ -386,12 +431,418 @@
           </div>
         </div>
         <!-- end of title -->
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <!-- indicators -->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="3"
+                ></li>
+              </ol>
+
+              <!-- images -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/projects-1.jpeg"
+                    alt="project item"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/projects-2.jpeg"
+                    alt="project item"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/projects-3.jpeg"
+                    alt="project item"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/projects-4.jpeg"
+                    alt="project item"
+                    class="d-block w-100"
+                  />
+                </div>
+              </div>
+              <!-- end of images -->
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- ====== end of CAROUSEL ===========-->
+    <!-- ====== ** end of CAROUSEL ===========-->
+
+    <!-- ====== Parallex effect ===========-->
+    <section id="parallex">
+      <div class="container-fluid h-25">
+        <div class="row">
+          <div class="col-md-5 mx-auto my-5 text-center">
+            <h1 class="text-danger text-capitalize display-5 font-weight-bold">
+              my first bootstrap website
+            </h1>
+            <p class="lead text-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              quaerat officia debitis sed natus recusandae pariatur dicta
+              laudantium!
+            </p>
+            <button class="btn btn-primary btn-lg m-2">
+              Press Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== ** end of Parallex effect ===========-->
+
+    <!-- ====== Blog section ===========-->
+    <section id="blog" class="bg-success">
+      <div class="container py-5">
+        <!-- title -->
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center">
+            <h1
+              class="display-4 text-orange font-weight-bold text-uppercase mb-0"
+            >
+              Blog
+            </h1>
+            <div class="title-underline bg-primary mx-auto"></div>
+            <p class="lead text-capitalize text-warning py-2 font-weight-bold">
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+        <!-- end of title -->
+
+        <div class="row">
+          <!-- project 1 -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <img src="./img/projects-1.jpeg" alt="" class="img-thumbnail" />
+            <h1 class="text-warning py-2">Project 1</h1>
+            <p class="lead text-dark">
+              Lorem, ipsum dolor sit amet consectetur adipisicing.
+            </p>
+          </div>
+          <!-- project 2 -->
+          <div class="col-md-6 col-lg-4 mb-3 mt-4">
+            <img src="./img/projects-2.jpeg" alt="" class="img-thumbnail" />
+            <h1 class="text-warning py-2">Project 2</h1>
+            <p class="lead text-dark">
+              Lorem, ipsum dolor sit amet consectetur adipisicing.
+            </p>
+          </div>
+          <!-- project 3 -->
+          <div class="col-md-6 col-lg-4 mb-3 mt-5">
+            <img src="./img/projects-3.jpeg" alt="" class="img-thumbnail" />
+            <h1 class="text-warning py-2">Project 3</h1>
+            <p class="lead text-dark">
+              Lorem, ipsum dolor sit amet consectetur adipisicing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== ** end of Blog section ===========-->
+
+    <!-- ====== Contact section ===========-->
+    <section id="contacts" class="bg-warning">
+      <div class="container py-5">
+        <!-- title -->
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center">
+            <h1
+              class="display-4 text-orange font-weight-bold text-uppercase mb-0"
+            >
+              contacts
+            </h1>
+            <div class="title-underline bg-primary mx-auto"></div>
+            <p class="lead text-capitalize text-light py-2 font-weight-bold">
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+        <!-- ** end of title -->
+
+        <div class="row align-items-center">
+          <!-- contact form -->
+          <div class="col-md-6 my-4">
+            <div class="card card-body bg-secondary">
+              <div class="card-title text-center text-light my-2">
+                <h2 class="d text-capitalize mb-0">
+                  new to bootstrap?
+                </h2>
+                <p class="lead">new user sign in</p>
+              </div>
+
+              <form>
+                <!-- inputs -->
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <!-- end of email -->
+
+                <!-- phone -->
+                <div class="form-group">
+                  <input
+                    type="number"
+                    placeholder="Phone"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <!-- end of phone -->
+
+                <!-- username 1 -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">username</span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Amount (to the nearest dollar)"
+                  />
+                </div>
+                <!-- end of username 1 -->
+
+                <!-- username -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"
+                      ><i class="fas fa-user"></i
+                    ></span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Amount (to the nearest dollar)"
+                  />
+                  <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">
+                      submit
+                    </button>
+                  </div>
+                </div>
+                <!-- end of username -->
+              </form>
+              <button
+                type="submit"
+                class="btn btn-block btn-outline-dark font-weight-bold"
+              >
+                Submit form
+              </button>
+            </div>
+          </div>
+          <!-- end of contact form -->
+
+          <!-- Google maps embed  -->
+          <div class="col-md-6 my-4">
+            <!-- 4:3 aspect ratio -->
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.9518836621605!2d-9.550940284668274!3d30.40910700820797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b74693a7c58d%3A0x4fb0e8551c05b152!2sInstitute%20Polypole%20Des%20Formations!5e0!3m2!1sen!2sma!4v1590752176186!5m2!1sen!2sma"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== ** END OF Contact section ===========-->
+
+    <!-- ====== Review section ===========-->
+    <section id="review" class="btn-danger">
+      <div class="container py-5">
+        <!-- title -->
+        <div class="row my-3">
+          <div class="col-md-6 mx-auto text-center">
+            <h1
+              class="display-4 text-dark font-weight-bold text-uppercase mb-0"
+            >
+              Review
+            </h1>
+            <div class="title-underline bg-warning mx-auto"></div>
+            <p
+              class="lead text-capitalize py-2 font-weight-bold text-secondary"
+            >
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+        <!-- ** end of title -->
+
+        <div class="row">
+          <!-- img -->
+          <div class="col-md-6 my-3">
+            <img
+              src="./img/team-6.jpg"
+              alt=""
+              class="img-fluid rounded-circle"
+            />
+          </div>
+          <!-- Blockquote -->
+          <div class="col-md-6">
+            <blockquote class="blockquote">
+              <p class="lead text-dark text-right font-weight-bold">
+                <i class="fas fa-quote-left fa-2x pr-2"></i>Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Facere laboriosam,
+                repellendus aliquam quidem labore tempore.
+              </p>
+              <footer class="blockquote-footer text-light">
+                Master Coder <cite class="cite title">Dogo</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== End of Review section ===========-->
+    <section id="parallex">
+      <div class="container py-5">
+        <!-- title -->
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center">
+            <h1
+              class="display-4 text-danger font-weight-bold text-uppercase mb-0"
+            >
+              Progress
+            </h1>
+            <div class="title-underline bg-light mx-auto"></div>
+            <p class="lead text-capitalize py-2 font-weight-bold text-primary">
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+        <!-- ** end of title -->
+
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <!-- Progresss Bar 1 -->
+            <h2 class="text-light mt-3">HTML</h2>
+            <div class="progress bg-secondary">
+              <div
+                class="progress-bar w-25 bg-danger"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuenow="25"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <!-- Progresss Bar 2 -->
+            <h2 class="text-light mt-3">CSS</h2>
+            <div class="progress bg-secondary">
+              <div
+                class="progress-bar progress-bar-striped w-50 bg-primary"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuenow="50"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <!-- Progresss Bar 3 -->
+            <h2 class="text-light mt-3">JavaScript</h2>
+            <div class="progress bg-secondary">
+              <div
+                class="progress-bar w-75 bg-warning"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuenow="75"
+                aria-valuemax="100"
+              >
+                75%
+              </div>
+            </div>
+            <!-- Progresss Bar 4 -->
+            <h2 class="text-light mt-3">Bootstrap</h2>
+            <div class="progress bg-secondary">
+              <div
+                class="progress-bar progress-bar-striped w-100 bg-info"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuenow="100"
+                aria-valuemax="100"
+              >
+                100%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- JAVASCRIPT -->
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

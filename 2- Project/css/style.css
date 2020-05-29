@@ -7,6 +7,10 @@ body {
   font-family: "Arvo", serif !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .title-underline {
   width: 200px;
   height: 8px;
@@ -18,4 +22,14 @@ body {
 
 .min-height {
   height: 75vh !important;
+}
+
+#parallex {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/projects-1.jpeg) center/cover fixed;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/projects-1.jpeg) center/cover fixed;
 }
