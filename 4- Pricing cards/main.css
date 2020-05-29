@@ -1,0 +1,32 @@
+.title-underline {
+  width: 235px;
+  height: 4px;
+}
+
+.cardOrange,
+.btnOrange {
+  background-color: #ce5a3c !important;
+}
+
+.cardGrey,
+.btnGrey {
+  background-color: #3a4a53 !important;
+}
+
+.cardGreen,
+.btnGreen {
+  background-color: #069a5d !important;
+}
+
+.iconOrange {
+  color: #ce5a3c;
+  font-size: 22px;
+}
+.iconGrey {
+  color: #3a4a53;
+  font-size: 22px;
+}
+.iconGreen {
+  color: #069a5d;
+  font-size: 22px;
+}
