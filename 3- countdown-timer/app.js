@@ -1,7 +1,3 @@
-// const DAYS = document.querySelector("DAYS");
-// const HOURS = document.querySelector("HOURS");
-// const MINS = document.querySelector("MINS");
-// const SECS = document.querySelector("SECS");
 const months = [
   "January",
   "February",
@@ -26,11 +22,17 @@ const weekdays = [
   "Saturday",
 ];
 
-const deadline = document.getElementById("deadline");
-const giveaway = document.getElementById("giveaway");
+const deadline = document.getElementById("deadline"); // dealine statement
+
+const giveaway = document.getElementById("giveaway"); // countdown timer parent
 const cardDark = document.querySelectorAll(".cardDark h2");
 
-const futureDate = new Date(2020, 4, 28, 10, 30, 0);
+let tempDate = new Date();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay = tempDate.getDate();
+
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 10, 30, 0);
 
 let weekDay = weekdays[futureDate.getDay()];
 const dayNum = futureDate.getDate();
@@ -62,7 +64,13 @@ const getRemainingTime = () => {
   cardDark.forEach((item, index) => {
     item.innerHTML = values[index];
   });
+
+  if (t < 0) {
+    clearInterval(countdown);
+    giveaway.innerHTML = `<h3 class="expired">Sorry this giveaway has expired</h3>
+     `;
+  }
 };
 
-let contdown = setInterval(getRemainingTime, 1000);
+let countdown = setInterval(getRemainingTime, 1000);
 getRemainingTime();
