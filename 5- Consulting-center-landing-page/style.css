@@ -1,0 +1,70 @@
+@media (max-width: 992px) and (min-width: 768px) {
+  #navBlock,
+  #navbarLinks {
+    flex-flow: column !important;
+  }
+}
+
+#carousel-caption {
+  bottom: 25%;
+  right: 45%;
+  left: 11%;
+  overflow: hidden;
+}
+
+/* Carousel Buttons transition */
+#carousel-caption button {
+  transition: all 0.3s ease-in;
+  transform: translateY(0);
+
+  animation: slidMeBtn 1.1s 0.3s ease-in;
+}
+@keyframes slidMeBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Carousel heading transition */
+#carousel-caption h2 {
+  animation: slidMeH2 0.8s 0.3s ease-in;
+}
+@keyframes slidMeH2 {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Carousel Pararaph transition */
+#carousel-caption p {
+  animation: slidMePara 0.7s 0.1s ease-in;
+}
+@keyframes slidMePara {
+  0% {
+    transform: translatex(50px);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
+
+.carousel-item img {
+  width: 132% !important;
+}
+
+.horizontal-line {
+  content: "";
+  width: 50px;
+  height: 1px;
+}
