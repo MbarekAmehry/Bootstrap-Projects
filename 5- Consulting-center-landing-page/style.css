@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
+
 @media (max-width: 992px) and (min-width: 768px) {
   #navBlock,
   #navbarLinks {
@@ -65,6 +67,59 @@
 
 .horizontal-line {
   content: "";
+  width: 60px;
+  width: 25%;
+  height: 2px;
+  background-color: #b49d96 !important;
+}
+
+#contacts .horizontal-line {
   width: 50px;
   height: 1px;
+}
+
+.consultingTitle {
+  color: #b09991;
+}
+
+.consultingIcons {
+  color: rgb(136, 124, 120);
+  color: rgb(196, 170, 161);
+}
+
+#achievement {
+  background: linear-gradient(
+      rgba(136, 124, 120, 0.3),
+      rgba(136, 124, 120, 0.3)
+    ),
+    url(./images/achivement.jpg) center/cover fixed no-repeat;
+}
+
+#achievement h2 {
+  color: #ffffff !important;
+  font-family: "Arvo", sans-serif !important;
+}
+
+@media (max-width: 768px) {
+  #services .d-flex {
+    justify-content: center;
+  }
+
+  #services .col-md-6 {
+    text-align: center;
+  }
+}
+
+.inputDark {
+  background-color: rgb(233, 231, 231);
+  font-size: 17px !important;
+  padding: 1.2em 0.6 !important;
+}
+
+.vHeight {
+  height: 80vh;
+}
+
+.formImage {
+  overflow: hidden;
 }
